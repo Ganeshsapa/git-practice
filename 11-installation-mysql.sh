@@ -8,7 +8,7 @@ then echo "Please run this script with root priveleges"
 exit 1
 fi
 
-dnf install git -y
+dnf list installed git
 
 if [ $? -ne 0 ]
 
@@ -24,4 +24,4 @@ then
     
 else
     echo "Git is already installed, nothing to do.."
-    fi
+fi
