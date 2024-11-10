@@ -8,3 +8,9 @@ then echo "Please run this script with root priveleges"
 fi
 
 dnf install git -y
+
+ls -ltr
+
+dlll -ls
+
+id -u
