@@ -1,3 +1,3 @@
 #!/bin/bash
 
-date
+echo "Today's date"$DATE"
