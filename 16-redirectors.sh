@@ -18,6 +18,7 @@ Y="\e[33m"
 CHECK_ROOT(){
 if [ $USERID -ne 0 ]
 then echo "$R Please run this script with root priveleges $N" &>>LOG_FILE
+
 exit 1
 fi
 }
@@ -33,8 +34,8 @@ VALIDATE()
         
 }
 USAGE(){
-echo -e "$R USAGE:: $N sudo sh 16-redirectors.sh package1 package2..."
-exit 1
+echo -e "$R $USAGE::$N sudo sh 16-redirectors.sh package1 package2..."
+
 }
 CHECK_ROOT
 if [ $# -eq 0 ]
